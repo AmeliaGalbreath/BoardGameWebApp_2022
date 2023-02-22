@@ -8,7 +8,7 @@ export class RepositoryService {
 
   constructor(private http: HttpClient) { }
 
-  apiUri: string = 'https://localhost:7034/api/boardgame'
+  apiUri: string = 'https://localhost:7009/api/boardgame'
 
   getBoardGames() {
     return this.http.get(this.apiUri)
