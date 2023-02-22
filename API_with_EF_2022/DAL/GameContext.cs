@@ -5,24 +5,23 @@ namespace API_with_EF_2022.DAL
 {
     public class GameContext : DbContext
     {
-        // Two constructors, first one is empty
+        //Two constructors, first one is empty
         public GameContext()
         {
 
         }
 
-        // Second one injects the context options
+        //Second one injects the context options
         public GameContext(DbContextOptions options) : base(options)
         {
 
         }
 
-        // Create the table based off the model
+        //Create the table based off the model
         public DbSet<BoardGame> BoardGames { get; set; }
-
         private static IConfigurationRoot _configuration;
 
-        // Set the configuration to use the JSON file for the connection string
+        //Set the configuration to use the JSON file for the connection string
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
             if (!optionsBuilder.IsConfigured)

@@ -11,7 +11,7 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace API_with_EF_2022.Migrations
 {
     [DbContext(typeof(GameContext))]
-    [Migration("20230127021235_initial")]
+    [Migration("20230222222731_initial")]
     partial class initial
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
